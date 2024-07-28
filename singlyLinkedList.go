@@ -67,3 +67,16 @@ func (l *LinkedList) Length() int {
 	}
 	return length // return the length of the linked list
 }
+
+func main() {
+	fmt.Println("LINKED LIST TESTS:")
+	ll := LinkedList{}
+	ll.Insert(1)
+	ll.Insert(2)
+	ll.Insert(3)
+	ll.Display()
+	fmt.Println("Length: ", ll.Length())
+	ll.Delete(2)
+	ll.Display()
+	fmt.Printf("Linked List Length: %v\n\n", ll.Length())
+}
